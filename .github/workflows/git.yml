@@ -18,7 +18,7 @@ jobs:
       - run: npm run build
       - run: npm test
       - name: Deploy
-        uses: shahpranaf/react-to-do
+        uses: shahpranaf/react-to-do@@master
         with:
           target_branch: gh-pages
           build_dir: build
