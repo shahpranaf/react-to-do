@@ -1,0 +1,68 @@
+.list-group-item:hover, .list-group-item.active {
+    background-color: #f2f2f2 !important;
+	color: inherit;
+	border: none;
+}
+
+/* .todo-list-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.todo-list-main .header input {
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid #fff;
+	width: 165px;
+}
+.todo-list-main .header button {
+	padding: 10px;
+	font-size: 16px;
+	margin: 10px;
+	margin-right: 0px;
+	background-color: #0066ff;
+	color: #fff;
+	border: 2px solid #0066ff;
+}
+.todo-list-main .header button:hover {
+	background-color: #003399;
+	border: 2px solid #003399;
+	cursor: pointer;
+}
+.todo-list-main .todo-list {
+	list-style: none;
+	padding-left: 0;
+	width: 250px;
+}
+.todo-list-main .todo-list li {
+	color: #333;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	list-style: none;
+    transition: background-color 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
+}
+.todo-list-main .todo-list li:hover {
+	background-color: pink;
+	cursor: pointer;
+}
+.todo-list-main .todo-list li.active {
+	background: red;
+}
+
+ul.todo-list {
+	padding: 0;
+}
+
+.undone {
+	color: #61dafb;
+}
+
+ */
