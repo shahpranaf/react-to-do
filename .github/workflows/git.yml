@@ -18,7 +18,7 @@ jobs:
       - run: npm run build
       - run: npm test
       - name: Deploy
-        uses: shahpranaf/ghaction-github-pages@v1
+        uses: shahpranaf/react-to-do
         with:
           target_branch: gh-pages
           build_dir: build
