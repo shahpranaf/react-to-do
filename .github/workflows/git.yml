@@ -14,6 +14,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "10.x"
+      - name: Cache dependencies
+          uses: actions/cache@v2
+          with:
+            path: |
+              **/node_modules
+            key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
       - run: npm install
       - run: CI=false npm run build
       - run: npm test
