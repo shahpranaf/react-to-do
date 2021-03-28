@@ -22,7 +22,10 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
       - run: npm install
       - run: CI=false npm run build
-      - run: npm test
+      - name: Run the tests and generate coverage report
+        run: npm test -- --coverage
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
       - name: Deploy
         run: |
           git config --global user.name $user_name
