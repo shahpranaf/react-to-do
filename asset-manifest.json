@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/react-to-do/static/css/main.23afe013.chunk.css",
-    "main.js": "/react-to-do/static/js/main.52b49c88.chunk.js",
-    "main.js.map": "/react-to-do/static/js/main.52b49c88.chunk.js.map",
-    "runtime-main.js": "/react-to-do/static/js/runtime-main.a5d9cdc0.js",
-    "runtime-main.js.map": "/react-to-do/static/js/runtime-main.a5d9cdc0.js.map",
+    "main.css": "/react-to-do/static/css/main.871a93ef.chunk.css",
+    "main.js": "/react-to-do/static/js/main.b41a4174.chunk.js",
+    "main.js.map": "/react-to-do/static/js/main.b41a4174.chunk.js.map",
+    "runtime-main.js": "/react-to-do/static/js/runtime-main.946a547f.js",
+    "runtime-main.js.map": "/react-to-do/static/js/runtime-main.946a547f.js.map",
     "static/css/2.38dfce2b.chunk.css": "/react-to-do/static/css/2.38dfce2b.chunk.css",
     "static/js/2.19f91fc9.chunk.js": "/react-to-do/static/js/2.19f91fc9.chunk.js",
     "static/js/2.19f91fc9.chunk.js.map": "/react-to-do/static/js/2.19f91fc9.chunk.js.map",
-    "static/js/3.a8eb84d5.chunk.js": "/react-to-do/static/js/3.a8eb84d5.chunk.js",
-    "static/js/3.a8eb84d5.chunk.js.map": "/react-to-do/static/js/3.a8eb84d5.chunk.js.map",
+    "static/js/3.29a3c8be.chunk.js": "/react-to-do/static/js/3.29a3c8be.chunk.js",
+    "static/js/3.29a3c8be.chunk.js.map": "/react-to-do/static/js/3.29a3c8be.chunk.js.map",
     "index.html": "/react-to-do/index.html",
     "static/css/2.38dfce2b.chunk.css.map": "/react-to-do/static/css/2.38dfce2b.chunk.css.map",
-    "static/css/main.23afe013.chunk.css.map": "/react-to-do/static/css/main.23afe013.chunk.css.map",
+    "static/css/main.871a93ef.chunk.css.map": "/react-to-do/static/css/main.871a93ef.chunk.css.map",
     "static/js/2.19f91fc9.chunk.js.LICENSE.txt": "/react-to-do/static/js/2.19f91fc9.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/react-to-do/static/media/fontawesome-webfont.f691f37e.woff",
-    "static/media/logo.6ce24c58.svg": "/react-to-do/static/media/logo.6ce24c58.svg"
+    "static/media/font-awesome.min.css": "/react-to-do/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.a5d9cdc0.js",
+    "static/js/runtime-main.946a547f.js",
     "static/css/2.38dfce2b.chunk.css",
     "static/js/2.19f91fc9.chunk.js",
-    "static/css/main.23afe013.chunk.css",
-    "static/js/main.52b49c88.chunk.js"
+    "static/css/main.871a93ef.chunk.css",
+    "static/js/main.b41a4174.chunk.js"
   ]
 }
