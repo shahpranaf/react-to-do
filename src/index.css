@@ -182,3 +182,6 @@ i {
 .mark-done .todo-heading  {
   text-decoration: line-through;
 }
+.blur-on-edit{
+  filter: blur(5px);
+}
