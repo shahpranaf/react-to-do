@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-notifications/lib/notifications.css';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Todo from './Todo';
-
+import {NotificationContainer} from 'react-notifications';
 
 ReactDOM.render(
   <React.StrictMode>
+    <NotificationContainer/>
     <Todo />
   </React.StrictMode>,
   document.getElementById('root')

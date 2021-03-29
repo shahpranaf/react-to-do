@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TodoItems from "./TodoItems";
+import {NotificationManager} from 'react-notifications';
 
 const INITIAL_TASK = {
 	key: "",
@@ -34,7 +35,7 @@ class Todo extends Component {
 			key: Date.now(),
 		});
 
-		this.setState({ list: newList, newTask: INITIAL_TASK });
+		this.setState({ list: newList, newTask: INITIAL_TASK }, () =>NotificationManager.success('Task added sucessfully'));
 	};
 
 	handlenewTask = (e) => {
@@ -66,7 +67,7 @@ class Todo extends Component {
 			lists = lists.filter((item) => !item.selected);
 		}
 
-		this.setState({ list: lists });
+		this.setState({ list: lists }, () =>NotificationManager.warning('Task deleted sucessfully'));
 		this.handleSelectCount(lists);
 	};
 
@@ -138,7 +139,7 @@ class Todo extends Component {
 			editing: false,
 		};
 		// document.getElementById(`check${index}`).focus();
-		this.setState({ list: lists });
+		this.setState({ list: lists }, () =>NotificationManager.success('Task updated sucessfully'));
 	};
 
 	getForm = (newTask) => (

@@ -33,7 +33,7 @@ class TodoItems extends Component {
         const badgeClass = item.priority === 'high' ? 'danger' : item.priority === 'medium' ? 'warning' : 'info'
 		
 		return (
-			<li role="list-item" aria-label={`list${index}`}
+			<li aria-label={`list${index}`}
 				className={`list-group-item ${this.props.cursor === index ? 'active' : null} ${!item.done ? null : 'mark-done'}`} 
 				key={item.key}
 				>
@@ -53,10 +53,10 @@ class TodoItems extends Component {
 						<div onBlur={(e) => this.handleBlur(e, index) } id={`editTask${index}`} className={`edit-task justify-content-between form-inline row ${ !item.editing ? 'd-none' : ''}`}>
 							<input autoComplete="off" name="editText" value={this.state.editText !== '' ? this.state.editText : item.text} 
 								ref ={(input) => {input && input.focus()}}
+								title="editTask"
 								placeholder="Enter Task"
 								onChange={this.handleEditing} 
 								className="form-control"
-								role="editTask"
 							/>
 							<button aria-label="editTaskOk" onClick={() => this.props.handleEditSubmit(index, this.state.editText)} className="btn-transition btn btn-sm text-success mr-1">
 								<i className={`fa fa-check`}></i>
@@ -65,7 +65,7 @@ class TodoItems extends Component {
 								<i className={`fa fa-close`}></i>
 							</button>
 						</div>
-						<div role="todoText" onDoubleClick = {() => this.props.handleEdit(index)}  className={`todo-content-left col-md-5 ${ item.editing ? 'blur-on-edit' : ''}`}>
+						<div title="todoText" onDoubleClick = {() => this.props.handleEdit(index)}  className={`todo-content-left col-md-5 ${ item.editing ? 'blur-on-edit' : ''}`}>
 							<div className="todo-heading" >
 								<span aria-label="taskText" >{item.text}</span>
                                 <div aria-label= "priority" className={`badge ml-2 badge-${badgeClass}` }>
@@ -95,7 +95,7 @@ class TodoItems extends Component {
 				<perfect-scrollbar className="ps-show-limits">
 					<div style={{ position: "static" }} className="ps ps--active-y">
 						<div className="ps-content">
-							<ul role="list" className=" list-group list-group-flush">
+							<ul className=" list-group list-group-flush">
                                 {listItems}
                             </ul>
 						</div>

@@ -8,7 +8,7 @@ describe('should edit tasks', () => {
     afterEach(cleanup);
 
     test('should edit task', async () => {
-        const {queryByTestId, getByTestId, queryByRole, findByRole} = render(<Todo />);
+        const {queryByTestId, getByTestId, queryByRole, queryByTitle} = render(<Todo />);
         
         expect(queryByTestId('newTask')).toBeTruthy();
         expect(queryByTestId('priority')).toBeTruthy();
@@ -25,13 +25,13 @@ describe('should edit tasks', () => {
         const addTaskBtn = getByTestId(/add-button/i);
         UserEvent.click(addTaskBtn);
   
-        const firstList = queryByRole('list-item', { 'name': 'list0'})
+        const firstList = queryByRole('listitem', { 'name': 'list0'})
 
-        const toDoHeader = within(firstList).queryByRole('todoText');
+        const toDoHeader = within(firstList).queryByTitle('todoText');
         
         UserEvent.dblClick(toDoHeader);
 
-        const editTaskInput = queryByRole('editTask')
+        const editTaskInput = queryByTitle('editTask')
         const editTaskSubmit =  queryByRole('button', {name: 'editTaskOk'})
 
         fireEvent.change(editTaskInput, {target: { value: "Task 2"}});

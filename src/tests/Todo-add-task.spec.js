@@ -32,7 +32,7 @@ describe('should add, select tasks', () => {
         const addTaskBtn = getByTestId(/add-button/i);
         UserEvent.click(addTaskBtn);
   
-        const firstList = queryByRole('list-item', { 'name': 'list0'})
+        const firstList = queryByRole('listitem', { 'name': 'list0'})
         const addedTask = within(firstList).queryByLabelText('taskText')
         const addedPriority = within(firstList).queryByLabelText('priority')
 
@@ -62,7 +62,7 @@ describe('should add, select tasks', () => {
       const addTaskBtn = getByTestId(/add-button/i);
       UserEvent.click(addTaskBtn);
 
-      const firstList = queryByRole('list-item', { 'name': 'list0'})
+      const firstList = queryByRole('listitem', { 'name': 'list0'})
       const addedTask = within(firstList).queryByLabelText('taskText')
       const addedPriority = within(firstList).queryByLabelText('priority')
 
